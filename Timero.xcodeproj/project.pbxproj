@@ -1,0 +1,669 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		780A4AD62AC9B957008B5E81 /* TimeroApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780A4AD52AC9B957008B5E81 /* TimeroApp.swift */; };
+		780A4ADA2AC9B958008B5E81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 780A4AD92AC9B958008B5E81 /* Assets.xcassets */; };
+		780A4ADD2AC9B958008B5E81 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 780A4ADC2AC9B958008B5E81 /* Preview Assets.xcassets */; };
+		780A4AE72AC9B958008B5E81 /* TimeroTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780A4AE62AC9B958008B5E81 /* TimeroTests.swift */; };
+		780A4AF12AC9B958008B5E81 /* TimeroUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780A4AF02AC9B958008B5E81 /* TimeroUITests.swift */; };
+		780A4AF32AC9B958008B5E81 /* TimeroUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780A4AF22AC9B958008B5E81 /* TimeroUITestsLaunchTests.swift */; };
+		780A4B042AC9DE13008B5E81 /* MainMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780A4B032AC9DE13008B5E81 /* MainMenuView.swift */; };
+		780A4B092AC9DF47008B5E81 /* TMCardSliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780A4B082AC9DF47008B5E81 /* TMCardSliderView.swift */; };
+		780A4B0B2AC9DF86008B5E81 /* TMCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780A4B0A2AC9DF86008B5E81 /* TMCardView.swift */; };
+		780A4B0F2AC9E1D0008B5E81 /* TMBentoTimerContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780A4B0E2AC9E1D0008B5E81 /* TMBentoTimerContainerView.swift */; };
+		780A4B112AC9E3B4008B5E81 /* TMProgressBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780A4B102AC9E3B4008B5E81 /* TMProgressBarView.swift */; };
+		780A4B132AC9E8BD008B5E81 /* TMBentoTimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780A4B122AC9E8BD008B5E81 /* TMBentoTimerView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		780A4AE32AC9B958008B5E81 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 780A4ACA2AC9B957008B5E81 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 780A4AD12AC9B957008B5E81;
+			remoteInfo = Timero;
+		};
+		780A4AED2AC9B958008B5E81 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 780A4ACA2AC9B957008B5E81 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 780A4AD12AC9B957008B5E81;
+			remoteInfo = Timero;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		780A4AD22AC9B957008B5E81 /* Timero.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Timero.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		780A4AD52AC9B957008B5E81 /* TimeroApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeroApp.swift; sourceTree = "<group>"; };
+		780A4AD92AC9B958008B5E81 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		780A4ADC2AC9B958008B5E81 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		780A4AE22AC9B958008B5E81 /* TimeroTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TimeroTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		780A4AE62AC9B958008B5E81 /* TimeroTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeroTests.swift; sourceTree = "<group>"; };
+		780A4AEC2AC9B958008B5E81 /* TimeroUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TimeroUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		780A4AF02AC9B958008B5E81 /* TimeroUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeroUITests.swift; sourceTree = "<group>"; };
+		780A4AF22AC9B958008B5E81 /* TimeroUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeroUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		780A4B032AC9DE13008B5E81 /* MainMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuView.swift; sourceTree = "<group>"; };
+		780A4B082AC9DF47008B5E81 /* TMCardSliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMCardSliderView.swift; sourceTree = "<group>"; };
+		780A4B0A2AC9DF86008B5E81 /* TMCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMCardView.swift; sourceTree = "<group>"; };
+		780A4B0E2AC9E1D0008B5E81 /* TMBentoTimerContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMBentoTimerContainerView.swift; sourceTree = "<group>"; };
+		780A4B102AC9E3B4008B5E81 /* TMProgressBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMProgressBarView.swift; sourceTree = "<group>"; };
+		780A4B122AC9E8BD008B5E81 /* TMBentoTimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMBentoTimerView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		780A4ACF2AC9B957008B5E81 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		780A4ADF2AC9B958008B5E81 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		780A4AE92AC9B958008B5E81 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		780A4AC92AC9B957008B5E81 = {
+			isa = PBXGroup;
+			children = (
+				780A4AD42AC9B957008B5E81 /* Timero */,
+				780A4AE52AC9B958008B5E81 /* TimeroTests */,
+				780A4AEF2AC9B958008B5E81 /* TimeroUITests */,
+				780A4AD32AC9B957008B5E81 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		780A4AD32AC9B957008B5E81 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				780A4AD22AC9B957008B5E81 /* Timero.app */,
+				780A4AE22AC9B958008B5E81 /* TimeroTests.xctest */,
+				780A4AEC2AC9B958008B5E81 /* TimeroUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		780A4AD42AC9B957008B5E81 /* Timero */ = {
+			isa = PBXGroup;
+			children = (
+				780A4B022AC9DDB1008B5E81 /* Manager */,
+				780A4B002AC9DDAA008B5E81 /* Model */,
+				780A4AFF2AC9DDA5008B5E81 /* View */,
+				780A4AD52AC9B957008B5E81 /* TimeroApp.swift */,
+				780A4AD92AC9B958008B5E81 /* Assets.xcassets */,
+				780A4ADB2AC9B958008B5E81 /* Preview Content */,
+			);
+			path = Timero;
+			sourceTree = "<group>";
+		};
+		780A4ADB2AC9B958008B5E81 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				780A4ADC2AC9B958008B5E81 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		780A4AE52AC9B958008B5E81 /* TimeroTests */ = {
+			isa = PBXGroup;
+			children = (
+				780A4AE62AC9B958008B5E81 /* TimeroTests.swift */,
+			);
+			path = TimeroTests;
+			sourceTree = "<group>";
+		};
+		780A4AEF2AC9B958008B5E81 /* TimeroUITests */ = {
+			isa = PBXGroup;
+			children = (
+				780A4AF02AC9B958008B5E81 /* TimeroUITests.swift */,
+				780A4AF22AC9B958008B5E81 /* TimeroUITestsLaunchTests.swift */,
+			);
+			path = TimeroUITests;
+			sourceTree = "<group>";
+		};
+		780A4AFF2AC9DDA5008B5E81 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				780A4B062AC9DF1E008B5E81 /* core */,
+				780A4B052AC9DF1B008B5E81 /* other */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		780A4B002AC9DDAA008B5E81 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		780A4B022AC9DDB1008B5E81 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		780A4B052AC9DF1B008B5E81 /* other */ = {
+			isa = PBXGroup;
+			children = (
+				780A4B0C2AC9E1A5008B5E81 /* Containers */,
+				780A4B082AC9DF47008B5E81 /* TMCardSliderView.swift */,
+				780A4B0A2AC9DF86008B5E81 /* TMCardView.swift */,
+				780A4B102AC9E3B4008B5E81 /* TMProgressBarView.swift */,
+				780A4B122AC9E8BD008B5E81 /* TMBentoTimerView.swift */,
+			);
+			path = other;
+			sourceTree = "<group>";
+		};
+		780A4B062AC9DF1E008B5E81 /* core */ = {
+			isa = PBXGroup;
+			children = (
+				780A4B032AC9DE13008B5E81 /* MainMenuView.swift */,
+			);
+			path = core;
+			sourceTree = "<group>";
+		};
+		780A4B0C2AC9E1A5008B5E81 /* Containers */ = {
+			isa = PBXGroup;
+			children = (
+				780A4B0D2AC9E1B2008B5E81 /* bento timer */,
+			);
+			path = Containers;
+			sourceTree = "<group>";
+		};
+		780A4B0D2AC9E1B2008B5E81 /* bento timer */ = {
+			isa = PBXGroup;
+			children = (
+				780A4B0E2AC9E1D0008B5E81 /* TMBentoTimerContainerView.swift */,
+			);
+			path = "bento timer";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		780A4AD12AC9B957008B5E81 /* Timero */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 780A4AF62AC9B958008B5E81 /* Build configuration list for PBXNativeTarget "Timero" */;
+			buildPhases = (
+				780A4ACE2AC9B957008B5E81 /* Sources */,
+				780A4ACF2AC9B957008B5E81 /* Frameworks */,
+				780A4AD02AC9B957008B5E81 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Timero;
+			productName = Timero;
+			productReference = 780A4AD22AC9B957008B5E81 /* Timero.app */;
+			productType = "com.apple.product-type.application";
+		};
+		780A4AE12AC9B958008B5E81 /* TimeroTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 780A4AF92AC9B958008B5E81 /* Build configuration list for PBXNativeTarget "TimeroTests" */;
+			buildPhases = (
+				780A4ADE2AC9B958008B5E81 /* Sources */,
+				780A4ADF2AC9B958008B5E81 /* Frameworks */,
+				780A4AE02AC9B958008B5E81 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				780A4AE42AC9B958008B5E81 /* PBXTargetDependency */,
+			);
+			name = TimeroTests;
+			productName = TimeroTests;
+			productReference = 780A4AE22AC9B958008B5E81 /* TimeroTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		780A4AEB2AC9B958008B5E81 /* TimeroUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 780A4AFC2AC9B958008B5E81 /* Build configuration list for PBXNativeTarget "TimeroUITests" */;
+			buildPhases = (
+				780A4AE82AC9B958008B5E81 /* Sources */,
+				780A4AE92AC9B958008B5E81 /* Frameworks */,
+				780A4AEA2AC9B958008B5E81 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				780A4AEE2AC9B958008B5E81 /* PBXTargetDependency */,
+			);
+			name = TimeroUITests;
+			productName = TimeroUITests;
+			productReference = 780A4AEC2AC9B958008B5E81 /* TimeroUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		780A4ACA2AC9B957008B5E81 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					780A4AD12AC9B957008B5E81 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					780A4AE12AC9B958008B5E81 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = 780A4AD12AC9B957008B5E81;
+					};
+					780A4AEB2AC9B958008B5E81 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = 780A4AD12AC9B957008B5E81;
+					};
+				};
+			};
+			buildConfigurationList = 780A4ACD2AC9B957008B5E81 /* Build configuration list for PBXProject "Timero" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 780A4AC92AC9B957008B5E81;
+			productRefGroup = 780A4AD32AC9B957008B5E81 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				780A4AD12AC9B957008B5E81 /* Timero */,
+				780A4AE12AC9B958008B5E81 /* TimeroTests */,
+				780A4AEB2AC9B958008B5E81 /* TimeroUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		780A4AD02AC9B957008B5E81 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				780A4ADD2AC9B958008B5E81 /* Preview Assets.xcassets in Resources */,
+				780A4ADA2AC9B958008B5E81 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		780A4AE02AC9B958008B5E81 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		780A4AEA2AC9B958008B5E81 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		780A4ACE2AC9B957008B5E81 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				780A4AD62AC9B957008B5E81 /* TimeroApp.swift in Sources */,
+				780A4B0F2AC9E1D0008B5E81 /* TMBentoTimerContainerView.swift in Sources */,
+				780A4B0B2AC9DF86008B5E81 /* TMCardView.swift in Sources */,
+				780A4B132AC9E8BD008B5E81 /* TMBentoTimerView.swift in Sources */,
+				780A4B042AC9DE13008B5E81 /* MainMenuView.swift in Sources */,
+				780A4B112AC9E3B4008B5E81 /* TMProgressBarView.swift in Sources */,
+				780A4B092AC9DF47008B5E81 /* TMCardSliderView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		780A4ADE2AC9B958008B5E81 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				780A4AE72AC9B958008B5E81 /* TimeroTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		780A4AE82AC9B958008B5E81 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				780A4AF32AC9B958008B5E81 /* TimeroUITestsLaunchTests.swift in Sources */,
+				780A4AF12AC9B958008B5E81 /* TimeroUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		780A4AE42AC9B958008B5E81 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 780A4AD12AC9B957008B5E81 /* Timero */;
+			targetProxy = 780A4AE32AC9B958008B5E81 /* PBXContainerItemProxy */;
+		};
+		780A4AEE2AC9B958008B5E81 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 780A4AD12AC9B957008B5E81 /* Timero */;
+			targetProxy = 780A4AED2AC9B958008B5E81 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		780A4AF42AC9B958008B5E81 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		780A4AF52AC9B958008B5E81 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		780A4AF72AC9B958008B5E81 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Timero/Preview Content\"";
+				DEVELOPMENT_TEAM = JNZT32R8TA;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.premyslmikulenka.Timero;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		780A4AF82AC9B958008B5E81 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Timero/Preview Content\"";
+				DEVELOPMENT_TEAM = JNZT32R8TA;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.premyslmikulenka.Timero;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		780A4AFA2AC9B958008B5E81 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JNZT32R8TA;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.premyslmikulenka.TimeroTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Timero.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Timero";
+			};
+			name = Debug;
+		};
+		780A4AFB2AC9B958008B5E81 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JNZT32R8TA;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.premyslmikulenka.TimeroTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Timero.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Timero";
+			};
+			name = Release;
+		};
+		780A4AFD2AC9B958008B5E81 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JNZT32R8TA;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.premyslmikulenka.TimeroUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Timero;
+			};
+			name = Debug;
+		};
+		780A4AFE2AC9B958008B5E81 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = JNZT32R8TA;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.premyslmikulenka.TimeroUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Timero;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		780A4ACD2AC9B957008B5E81 /* Build configuration list for PBXProject "Timero" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				780A4AF42AC9B958008B5E81 /* Debug */,
+				780A4AF52AC9B958008B5E81 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		780A4AF62AC9B958008B5E81 /* Build configuration list for PBXNativeTarget "Timero" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				780A4AF72AC9B958008B5E81 /* Debug */,
+				780A4AF82AC9B958008B5E81 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		780A4AF92AC9B958008B5E81 /* Build configuration list for PBXNativeTarget "TimeroTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				780A4AFA2AC9B958008B5E81 /* Debug */,
+				780A4AFB2AC9B958008B5E81 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		780A4AFC2AC9B958008B5E81 /* Build configuration list for PBXNativeTarget "TimeroUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				780A4AFD2AC9B958008B5E81 /* Debug */,
+				780A4AFE2AC9B958008B5E81 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 780A4ACA2AC9B957008B5E81 /* Project object */;
+}
