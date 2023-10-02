@@ -8,10 +8,14 @@
 import SwiftUI
 
 struct MainMenuView: View {
+    
+    private let viewModel: MainMenuViewViewModel = MainMenuViewViewModel()
+    @State private var isRunning: Bool = false
+    
     var body: some View {
         ZStack {
             VStack {
-                Spacer() 
+                Spacer()
                 
                 TMCardSliderView()
                     .frame(height: 200)
@@ -28,6 +32,9 @@ struct MainMenuView: View {
                             ForEach(0..<3) { _ in // Buttons
                                 TMBentoTimerView()
                                     .frame(height: 75)
+                                    .onTapGesture {
+                                        viewModel.timerTapped(timerIsRunning: $isRunning)
+                                    }
                             }
                         }
                     }
