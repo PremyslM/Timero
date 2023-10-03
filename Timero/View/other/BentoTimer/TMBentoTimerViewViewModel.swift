@@ -10,10 +10,11 @@ import Foundation
 
 class TMBentoTimerViewViewModel: ObservableObject {
     
-    private let timerManager = TimerManager()
-    
-    var timer: TMTimer
     @Published var currentCountDown: Double
+    
+    private let timerManager = TimerManager()
+        
+    public var timer: TMTimer
     
     init(timer: TMTimer) {
         self.timer = timer
@@ -23,6 +24,15 @@ class TMBentoTimerViewViewModel: ObservableObject {
     func startTimer() {
         timerManager.startTimer {
             self.currentCountDown = self.currentCountDown - 1
+            print("TImer: \(self.currentCountDown)")
         }
+    }
+    
+    // MARK: - Private
+    private func isRunning() -> Bool{
+        if self.timer.timeValue == self.currentCountDown {
+            return false
+        }
+        return true
     }
 }

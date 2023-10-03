@@ -10,7 +10,7 @@ import SwiftUI
 
 struct TMBentoTimerView: View {
     
-    private var viewModel: TMBentoTimerViewViewModel
+    @ObservedObject private var viewModel: TMBentoTimerViewViewModel
     
     init(_ timer: TMTimer) {
         self.viewModel = TMBentoTimerViewViewModel(timer: timer)
@@ -21,7 +21,7 @@ struct TMBentoTimerView: View {
             Color.black
                 .clipShape(RoundedRectangle(cornerRadius: 8))
             
-            if viewModel.timer.timeValue != viewModel.currentCountDown {
+            if viewModel.timer.timeValue == viewModel.currentCountDown {
                 VStack {
                     Image(systemName: "plus")
                         .foregroundStyle(Color.white)
@@ -30,8 +30,12 @@ struct TMBentoTimerView: View {
             } else {
                 HStack {
                     Text("\(viewModel.currentCountDown)")
+                        .foregroundStyle(.white)
                 }
             }
+        }
+        .onTapGesture {
+            viewModel.startTimer()
         }
     }
 }
