@@ -10,17 +10,32 @@ import Foundation
 
 class TMBentoTimerViewViewModel: ObservableObject {
     
-    @Published var currentCountDown: Double
-    @Published var isPressed: Bool
-    
-    private let timerManager = TimerManager()
+    // MARK: - Public
+    @Published public var currentCountDown: Double
+    @Published public var isPressed: Bool
     
     public var timer: TMTimer
+    
+    // MARK: - Private
+    private let timerManager = TimerManager()
     
     init(timer: TMTimer) {
         self.timer = timer
         self.currentCountDown = timer.timeValue
         self.isPressed = false
+    }
+    
+    // MARK: - Public
+    public func isRunning() -> Bool {
+        if self.timer.timeValue == self.currentCountDown {
+            return false
+        }
+        return true
+    }
+    
+    public func timerTapped() {
+        self.tapped()
+        self.startTimer()
     }
     
     // MARK: - Private
@@ -36,18 +51,5 @@ class TMBentoTimerViewViewModel: ObservableObject {
     
     private func tapped() {
         self.isPressed = true
-    }
-    
-    // MARK: - Public
-    public func isRunning() -> Bool {
-        if self.timer.timeValue == self.currentCountDown {
-            return false
-        }
-        return true
-    }
-    
-    public func timerTapped() {
-        self.tapped()
-        self.startTimer()
     }
 }
