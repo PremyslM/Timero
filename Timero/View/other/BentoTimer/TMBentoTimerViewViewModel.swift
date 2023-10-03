@@ -11,28 +11,41 @@ import Foundation
 class TMBentoTimerViewViewModel: ObservableObject {
     
     @Published var currentCountDown: Double
+    @Published var isPressed: Bool
     
     private let timerManager = TimerManager()
-        
+    
     public var timer: TMTimer
     
     init(timer: TMTimer) {
         self.timer = timer
         self.currentCountDown = timer.timeValue
-    }
-    
-    func startTimer() {
-        timerManager.startTimer {
-            self.currentCountDown = self.currentCountDown - 1
-            print("TImer: \(self.currentCountDown)")
-        }
+        self.isPressed = false
     }
     
     // MARK: - Private
-    private func isRunning() -> Bool{
+    private func startTimer() {
+        if !isRunning() {
+            timerManager.startTimer {
+                self.currentCountDown = self.currentCountDown - 1
+            }
+        }
+    }
+    
+    private func tapped() {
+        self.isPressed = true
+    }
+    
+    // MARK: - Public
+    public func isRunning() -> Bool {
         if self.timer.timeValue == self.currentCountDown {
             return false
         }
         return true
+    }
+    
+    public func timerTapped() {
+        self.tapped()
+        self.startTimer()
     }
 }

@@ -21,7 +21,7 @@ struct TMBentoTimerView: View {
             Color.black
                 .clipShape(RoundedRectangle(cornerRadius: 8))
             
-            if viewModel.timer.timeValue == viewModel.currentCountDown {
+            if !viewModel.isPressed {
                 VStack {
                     Image(systemName: "plus")
                         .foregroundStyle(Color.white)
@@ -35,7 +35,7 @@ struct TMBentoTimerView: View {
             }
         }
         .onTapGesture {
-            viewModel.startTimer()
+            viewModel.timerTapped()
         }
     }
 }
