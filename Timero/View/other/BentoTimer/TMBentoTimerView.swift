@@ -29,13 +29,15 @@ struct TMBentoTimerView: View {
                 }
             } else {
                 HStack {
-                    Text("\(viewModel.currentCountDown)")
+                    Text("\(Int(viewModel.currentCountDown))s")
                         .foregroundStyle(.white)
                 }
             }
         }
         .onTapGesture {
-            viewModel.timerTapped()
+            withAnimation {
+                viewModel.timerTapped()
+            }
         }
     }
 }

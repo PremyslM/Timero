@@ -27,7 +27,9 @@ class TMBentoTimerViewViewModel: ObservableObject {
     private func startTimer() {
         if !isRunning() {
             timerManager.startTimer {
-                self.currentCountDown = self.currentCountDown - 1
+                if self.currentCountDown > 0 {
+                    self.currentCountDown = self.currentCountDown - 1
+                }
             }
         }
     }

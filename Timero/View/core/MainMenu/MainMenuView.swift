@@ -30,7 +30,7 @@ struct MainMenuView: View {
                         
                         VStack(spacing: 10) {
                             ForEach(0..<3) { _ in // Buttons
-                                TMBentoTimerView(TMTimer(title: "TestTimer", timeValue: 125, isDone: false))
+                                TMBentoTimerView(TMTimer(title: "TestTimer", timeValue: 5, isDone: false))
                                     .frame(height: 75)                                                                                                            
                             }
                         }
