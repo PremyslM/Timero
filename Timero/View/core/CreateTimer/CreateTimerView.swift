@@ -10,6 +10,8 @@ import SwiftUI
 
 struct CreateTimerView: View {
     
+    private var viewModel: CreateTimerViewModel = CreateTimerViewModel()
+    
     @State private var title: String = "test timer"
     @State private var duration: Double = 25.0
     
