@@ -10,10 +10,14 @@ import SwiftUI
 
 struct CreateTimerView: View {
     
-    private var viewModel: CreateTimerViewModel = CreateTimerViewModel()
+    private var viewModel: CreateTimerViewModel
     
     @State private var title: String = "test timer"
     @State private var duration: Double = 25.0
+    
+    init(timerViewModel: TMBentoTimerViewViewModel) {
+        self.viewModel = CreateTimerViewModel(timerViewModel)
+    }
     
     var body: some View {
         Form {
@@ -30,7 +34,8 @@ struct CreateTimerView: View {
                 HStack {
                     Spacer()
                     Button {
-                        // Submit
+                        let newTimer = TMTimer(title: title, timeValue: duration, isDone: false)
+                        self.viewModel.submitButtonTapped(newTimer)
                     } label: {
                         Image(systemName: "arrow.up.circle")
                             .font(.system(size: 26))
@@ -43,5 +48,5 @@ struct CreateTimerView: View {
 }
 
 #Preview {
-    CreateTimerView()
+    CreateTimerView(timerViewModel: TMBentoTimerViewViewModel(timer: TMTimer(title: "PReview", timeValue: 23, isDone: false)))
 }

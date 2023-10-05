@@ -13,8 +13,7 @@ class TMBentoTimerViewViewModel: ObservableObject {
     // MARK: - Public
     @Published public var currentCountDown: Double
     @Published public var isPressed: Bool
-    
-    public var timer: TMTimer
+    @Published public var timer: TMTimer
     
     // MARK: - Private
     private let timerManager = TimerManager()
@@ -36,6 +35,11 @@ class TMBentoTimerViewViewModel: ObservableObject {
     public func timerTapped() {
         self.tapped()
         self.startTimer()
+    }
+    
+    public func onSubmitCreateTimer(_ timer: TMTimer, onSubmit: @escaping () -> Void) {
+        onSubmit()
+        self.timer = timer
     }
     
     // MARK: - Private

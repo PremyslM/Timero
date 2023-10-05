@@ -7,6 +7,21 @@
 
 import Foundation
 
-class CreateTimerViewModel {
+class CreateTimerViewModel: ObservableObject {
+    @Published var timer: TMTimer?
+    var timerViewModel: TMBentoTimerViewViewModel
     
+    init(_ timerViewModel: TMBentoTimerViewViewModel) {
+        self.timerViewModel = timerViewModel
+    }
+    
+    public func submitButtonTapped(_ timer: TMTimer) {
+        createTimer(timer)
+        self.timerViewModel.onSubmitCreateTimer(timer) {
+        }
+    }
+    
+    private func createTimer(_ timer: TMTimer) {
+        self.timer = timer
+    }
 }
