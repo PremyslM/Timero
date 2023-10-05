@@ -13,4 +13,6 @@ struct TMTimer: Codable {
     let title: String
     let timeValue: Double
     let isDone: Bool
+    
+    var date: Date = Date()
 }

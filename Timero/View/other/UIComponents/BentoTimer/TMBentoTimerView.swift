@@ -31,6 +31,21 @@ struct TMBentoTimerView: View {
                 HStack {
                     Text("\(Int(viewModel.currentCountDown))s")
                         .foregroundStyle(.white)
+                        .padding(.leading)
+                    
+                    Rectangle()
+                        .frame(width: 2)
+                        .foregroundStyle(.white)
+                        .padding()
+                    
+                    VStack(alignment: .leading) {
+                        Text(viewModel.timer.title)
+                        Text(viewModel.timer.date.formatted())
+                            .font(.footnote)
+                    }
+                    .foregroundStyle(.white)
+                    
+                    Spacer()
                 }
             }
         }

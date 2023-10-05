@@ -21,6 +21,8 @@
 		780A4B132AC9E8BD008B5E81 /* TMBentoTimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780A4B122AC9E8BD008B5E81 /* TMBentoTimerView.swift */; };
 		786C113C2ACBD9BA001FD0F7 /* TMBentoTimerViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786C113B2ACBD9BA001FD0F7 /* TMBentoTimerViewViewModel.swift */; };
 		786C11402ACBDA9B001FD0F7 /* TMTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786C113F2ACBDA9B001FD0F7 /* TMTimer.swift */; };
+		788492FD2ACF406A00DF4673 /* CreateTimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788492FC2ACF406A00DF4673 /* CreateTimerView.swift */; };
+		788492FF2ACF407500DF4673 /* CreateTimerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788492FE2ACF407500DF4673 /* CreateTimerViewModel.swift */; };
 		78D9C9CB2ACB43B400C7C096 /* MainMenuViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D9C9CA2ACB43B400C7C096 /* MainMenuViewViewModel.swift */; };
 		78D9C9CD2ACB440100C7C096 /* TimerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D9C9CC2ACB440100C7C096 /* TimerManager.swift */; };
 /* End PBXBuildFile section */
@@ -60,6 +62,8 @@
 		780A4B122AC9E8BD008B5E81 /* TMBentoTimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMBentoTimerView.swift; sourceTree = "<group>"; };
 		786C113B2ACBD9BA001FD0F7 /* TMBentoTimerViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMBentoTimerViewViewModel.swift; sourceTree = "<group>"; };
 		786C113F2ACBDA9B001FD0F7 /* TMTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMTimer.swift; sourceTree = "<group>"; };
+		788492FC2ACF406A00DF4673 /* CreateTimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTimerView.swift; sourceTree = "<group>"; };
+		788492FE2ACF407500DF4673 /* CreateTimerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTimerViewModel.swift; sourceTree = "<group>"; };
 		78D9C9CA2ACB43B400C7C096 /* MainMenuViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuViewViewModel.swift; sourceTree = "<group>"; };
 		78D9C9CC2ACB440100C7C096 /* TimerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -175,7 +179,7 @@
 		780A4B052AC9DF1B008B5E81 /* other */ = {
 			isa = PBXGroup;
 			children = (
-				786C113A2ACBD999001FD0F7 /* BentoTimer */,
+				78DD80CF2ACC8C9C0018DDE8 /* UIComponents */,
 				780A4B0C2AC9E1A5008B5E81 /* Containers */,
 				780A4B082AC9DF47008B5E81 /* TMCardSliderView.swift */,
 				780A4B0A2AC9DF86008B5E81 /* TMCardView.swift */,
@@ -187,6 +191,7 @@
 		780A4B062AC9DF1E008B5E81 /* core */ = {
 			isa = PBXGroup;
 			children = (
+				788492FB2ACF405800DF4673 /* CreateTimer */,
 				78D9C9C92ACB43A000C7C096 /* MainMenu */,
 			);
 			path = core;
@@ -217,6 +222,15 @@
 			path = BentoTimer;
 			sourceTree = "<group>";
 		};
+		788492FB2ACF405800DF4673 /* CreateTimer */ = {
+			isa = PBXGroup;
+			children = (
+				788492FC2ACF406A00DF4673 /* CreateTimerView.swift */,
+				788492FE2ACF407500DF4673 /* CreateTimerViewModel.swift */,
+			);
+			path = CreateTimer;
+			sourceTree = "<group>";
+		};
 		78D9C9C92ACB43A000C7C096 /* MainMenu */ = {
 			isa = PBXGroup;
 			children = (
@@ -224,6 +238,14 @@
 				78D9C9CA2ACB43B400C7C096 /* MainMenuViewViewModel.swift */,
 			);
 			path = MainMenu;
+			sourceTree = "<group>";
+		};
+		78DD80CF2ACC8C9C0018DDE8 /* UIComponents */ = {
+			isa = PBXGroup;
+			children = (
+				786C113A2ACBD999001FD0F7 /* BentoTimer */,
+			);
+			path = UIComponents;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -357,6 +379,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				780A4AD62AC9B957008B5E81 /* TimeroApp.swift in Sources */,
+				788492FF2ACF407500DF4673 /* CreateTimerViewModel.swift in Sources */,
 				780A4B0F2AC9E1D0008B5E81 /* TMBentoTimerContainerView.swift in Sources */,
 				780A4B0B2AC9DF86008B5E81 /* TMCardView.swift in Sources */,
 				780A4B132AC9E8BD008B5E81 /* TMBentoTimerView.swift in Sources */,
@@ -364,6 +387,7 @@
 				780A4B112AC9E3B4008B5E81 /* TMProgressBarView.swift in Sources */,
 				78D9C9CD2ACB440100C7C096 /* TimerManager.swift in Sources */,
 				786C113C2ACBD9BA001FD0F7 /* TMBentoTimerViewViewModel.swift in Sources */,
+				788492FD2ACF406A00DF4673 /* CreateTimerView.swift in Sources */,
 				786C11402ACBDA9B001FD0F7 /* TMTimer.swift in Sources */,
 				780A4B092AC9DF47008B5E81 /* TMCardSliderView.swift in Sources */,
 				78D9C9CB2ACB43B400C7C096 /* MainMenuViewViewModel.swift in Sources */,
