@@ -12,6 +12,9 @@ struct TMBentoTimerView: View {
     
     @ObservedObject private var viewModel: TMBentoTimerViewViewModel
     
+    @State private var addNewViewIsShowing: Bool = false
+    
+    
     init(_ timer: TMTimer) {
         self.viewModel = TMBentoTimerViewViewModel(timer: timer)
     }
@@ -51,9 +54,13 @@ struct TMBentoTimerView: View {
         }
         .onTapGesture {
             withAnimation {
+                addNewViewIsShowing = true
                 viewModel.timerTapped()
             }
         }
+        .sheet(isPresented: $addNewViewIsShowing, content: {
+            CreateTimerView(timerViewModel: viewModel)
+        })
     }
 }
 
