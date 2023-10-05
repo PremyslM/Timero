@@ -16,7 +16,7 @@ struct TMBentoTimerView: View {
     
     
     init(_ timer: TMTimer) {
-        self.viewModel = TMBentoTimerViewViewModel(timer: timer)
+        self.viewModel = TMBentoTimerViewViewModel()
     }
     
     var body: some View {
@@ -32,7 +32,7 @@ struct TMBentoTimerView: View {
                 }
             } else {
                 HStack {
-                    Text("\(Int(viewModel.currentCountDown))s")
+                    Text("\(Int(viewModel.currentCountDown ?? 69))s")
                         .foregroundStyle(.white)
                         .padding(.leading)
                     
@@ -42,8 +42,8 @@ struct TMBentoTimerView: View {
                         .padding()
                     
                     VStack(alignment: .leading) {
-                        Text(viewModel.timer.title)
-                        Text(viewModel.timer.date.formatted())
+                        Text(viewModel.timer?.title ?? "Unknwon")
+                        Text(viewModel.timer?.date.formatted() ?? "Unknwon")
                             .font(.footnote)
                     }
                     .foregroundStyle(.white)
@@ -54,8 +54,11 @@ struct TMBentoTimerView: View {
         }
         .onTapGesture {
             withAnimation {
-                addNewViewIsShowing = true
                 viewModel.timerTapped()
+                print(viewModel.timerSetted)
+                if !viewModel.timerSetted {
+                    addNewViewIsShowing = true
+                }
             }
         }
         .sheet(isPresented: $addNewViewIsShowing, content: {

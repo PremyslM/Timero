@@ -10,6 +10,8 @@ import SwiftUI
 
 struct CreateTimerView: View {
     
+    @Environment(\.dismiss) var dismiss
+    
     private var viewModel: CreateTimerViewModel
     
     @State private var title: String = "test timer"
@@ -26,7 +28,7 @@ struct CreateTimerView: View {
                 
                 HStack(spacing: 10) {
                     Text("\(Int(duration))s")
-                    Slider(value: $duration, in: 5...50)
+                    Slider(value: $duration, in: 10...100)
                 }
             }
             
@@ -35,7 +37,8 @@ struct CreateTimerView: View {
                     Spacer()
                     Button {
                         let newTimer = TMTimer(title: title, timeValue: duration, isDone: false)
-                        self.viewModel.submitButtonTapped(newTimer)
+                        self.viewModel.submitButtonTapped(newTimer)                        
+                        dismiss()
                     } label: {
                         Image(systemName: "arrow.up.circle")
                             .font(.system(size: 26))
@@ -48,5 +51,5 @@ struct CreateTimerView: View {
 }
 
 #Preview {
-    CreateTimerView(timerViewModel: TMBentoTimerViewViewModel(timer: TMTimer(title: "PReview", timeValue: 23, isDone: false)))
+    CreateTimerView(timerViewModel: TMBentoTimerViewViewModel())
 }
