@@ -55,9 +55,8 @@ class TMBentoTimerViewViewModel: ObservableObject {
     }
     
     private func tapped() {
-        self.isPressed = true
-        print("Inside: \(timerSetted)")
-        if timerSetted {
+        self.isPressed = true        
+        if timerSetted && !isRunning() {
             self.startTimer()
         }
     }
