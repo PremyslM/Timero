@@ -50,8 +50,10 @@ class TMBentoTimerViewViewModel: ObservableObject {
             print(self.currentCountDown)
             if self.currentCountDown > 0 {
                 self.currentCountDown = self.currentCountDown - 1
+            } else {
+                self.timerManager.stopTimer()
             }
-        }        
+        }
     }
     
     private func tapped() {
