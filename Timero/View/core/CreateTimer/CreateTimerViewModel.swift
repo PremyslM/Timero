@@ -18,6 +18,8 @@ class CreateTimerViewModel: ObservableObject {
     public func submitButtonTapped(_ timer: TMTimer) {
         createTimer(timer)
         self.timerViewModel.onSubmitCreateTimer(timer) {
+            DataManager.timerArray.append(timer)
+            DataManager.getInfo()
         }
     }
     

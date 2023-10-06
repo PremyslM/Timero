@@ -21,6 +21,7 @@
 		780A4B132AC9E8BD008B5E81 /* TMBentoTimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780A4B122AC9E8BD008B5E81 /* TMBentoTimerView.swift */; };
 		786C113C2ACBD9BA001FD0F7 /* TMBentoTimerViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786C113B2ACBD9BA001FD0F7 /* TMBentoTimerViewViewModel.swift */; };
 		786C11402ACBDA9B001FD0F7 /* TMTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786C113F2ACBDA9B001FD0F7 /* TMTimer.swift */; };
+		787B84522ACFDF72008DD737 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787B84512ACFDF72008DD737 /* DataManager.swift */; };
 		788492FD2ACF406A00DF4673 /* CreateTimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788492FC2ACF406A00DF4673 /* CreateTimerView.swift */; };
 		788492FF2ACF407500DF4673 /* CreateTimerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788492FE2ACF407500DF4673 /* CreateTimerViewModel.swift */; };
 		78D9C9CB2ACB43B400C7C096 /* MainMenuViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D9C9CA2ACB43B400C7C096 /* MainMenuViewViewModel.swift */; };
@@ -62,6 +63,7 @@
 		780A4B122AC9E8BD008B5E81 /* TMBentoTimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMBentoTimerView.swift; sourceTree = "<group>"; };
 		786C113B2ACBD9BA001FD0F7 /* TMBentoTimerViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMBentoTimerViewViewModel.swift; sourceTree = "<group>"; };
 		786C113F2ACBDA9B001FD0F7 /* TMTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMTimer.swift; sourceTree = "<group>"; };
+		787B84512ACFDF72008DD737 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		788492FC2ACF406A00DF4673 /* CreateTimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTimerView.swift; sourceTree = "<group>"; };
 		788492FE2ACF407500DF4673 /* CreateTimerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTimerViewModel.swift; sourceTree = "<group>"; };
 		78D9C9CA2ACB43B400C7C096 /* MainMenuViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuViewViewModel.swift; sourceTree = "<group>"; };
@@ -172,6 +174,7 @@
 			isa = PBXGroup;
 			children = (
 				78D9C9CC2ACB440100C7C096 /* TimerManager.swift */,
+				787B84512ACFDF72008DD737 /* DataManager.swift */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -383,6 +386,7 @@
 				780A4B0F2AC9E1D0008B5E81 /* TMBentoTimerContainerView.swift in Sources */,
 				780A4B0B2AC9DF86008B5E81 /* TMCardView.swift in Sources */,
 				780A4B132AC9E8BD008B5E81 /* TMBentoTimerView.swift in Sources */,
+				787B84522ACFDF72008DD737 /* DataManager.swift in Sources */,
 				780A4B042AC9DE13008B5E81 /* MainMenuView.swift in Sources */,
 				780A4B112AC9E3B4008B5E81 /* TMProgressBarView.swift in Sources */,
 				78D9C9CD2ACB440100C7C096 /* TimerManager.swift in Sources */,
