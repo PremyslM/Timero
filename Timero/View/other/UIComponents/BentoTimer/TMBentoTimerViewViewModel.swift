@@ -14,7 +14,7 @@ class TMBentoTimerViewViewModel: ObservableObject {
     @Published public var isPressed: Bool
     @Published public var timerSetted: Bool
     
-    @Published public var currentCountDown: Double?
+    @Published public var currentCountDown: Double = 25.0
     @Published public var timer: TMTimer?
     
     // MARK: - Private
@@ -47,9 +47,9 @@ class TMBentoTimerViewViewModel: ObservableObject {
     // MARK: - Private
     private func startTimer() {
         timerManager.startTimer {
-            print(self.currentCountDown ?? 69)
-            if self.currentCountDown ?? 69 > 0 {
-                self.currentCountDown = self.currentCountDown ?? 69 - 1
+            print(self.currentCountDown)
+            if self.currentCountDown > 0 {
+                self.currentCountDown = self.currentCountDown - 1
             }
         }        
     }

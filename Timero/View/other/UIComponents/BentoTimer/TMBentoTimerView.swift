@@ -32,7 +32,7 @@ struct TMBentoTimerView: View {
                 }
             } else {
                 HStack {
-                    Text("\(Int(viewModel.currentCountDown ?? 69))s")
+                    Text("\(Int(viewModel.currentCountDown))s")
                         .foregroundStyle(.white)
                         .padding(.leading)
                     
